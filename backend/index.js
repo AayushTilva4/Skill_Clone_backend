@@ -1,9 +1,6 @@
 import app from './src/utils/app.js';
 
-// app.listen(process.env.PORT || 3000, () => {
-//   console.log(`Server running on port ${process.env.PORT || 3000} at ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`);
-// });
-const PORT = process.env.PORT || 3000;
-app.listen(5000, () => {
-  console.log(`Server running on port ${PORT}`);
+const PORT = process.env.PORT || 5000; // Use Render's PORT or fallback to 5000
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT} at ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`);
 });
